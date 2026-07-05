@@ -6,3 +6,4 @@ python-dotenv
 ddgs
 tldextract
 google-genai
+reportlab
