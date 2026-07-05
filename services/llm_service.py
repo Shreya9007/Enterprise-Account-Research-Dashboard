@@ -1,15 +1,20 @@
 import json
 import os
 
+import streamlit as st
 from dotenv import load_dotenv
 from google import genai
 
 load_dotenv()
 
-client = genai.Client(
-    api_key=os.getenv("LLM_API_KEY")
+LLM_API_KEY = st.secrets.get(
+    "LLM_API_KEY",
+    os.getenv("LLM_API_KEY")
 )
 
+client = genai.Client(
+    api_key=LLM_API_KEY
+)
 
 def build_prompt(company_name, intelligence):
     """

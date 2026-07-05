@@ -1,11 +1,15 @@
 import os
 import re
 import requests
+import streamlit as st
 from dotenv import load_dotenv
 
 load_dotenv()
 
-NEWS_API_KEY = os.getenv("NEWS_API_KEY")
+NEWS_API_KEY = st.secrets.get(
+    "NEWS_API_KEY",
+    os.getenv("NEWS_API_KEY")
+)
 
 BASE_URL = "https://newsapi.org/v2/everything"
 
