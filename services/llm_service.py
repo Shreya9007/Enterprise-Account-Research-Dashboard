@@ -11,7 +11,8 @@ LLM_API_KEY = st.secrets.get(
     "LLM_API_KEY",
     os.getenv("LLM_API_KEY")
 )
-
+print("LLM_API_KEY loaded:", bool(LLM_API_KEY))
+print("Key prefix:", LLM_API_KEY[:6] if LLM_API_KEY else "None")
 client = genai.Client(
     api_key=LLM_API_KEY
 )
