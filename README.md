@@ -1,5 +1,8 @@
 # Enterprise Account Research Dashboard
 
+### Live Demo
+https://enterprise-account-research-dashboard-cqgaffjrmwjzykxye9otuu.streamlit.app/
+
 ## Overview
 
 The **Enterprise Account Research Dashboard** is an AI-powered sales intelligence application that helps Business-to-Business (B2B) sales teams prepare for customer meetings by automatically gathering and summarizing publicly available company information.
@@ -9,6 +12,7 @@ The application discovers a company's official website, retrieves recent enterpr
 The project is built with Python and Streamlit and demonstrates the integration of web search, news intelligence, natural language processing, and large language models into a unified enterprise research workflow.
 
 ---
+
 
 ## Features
 
@@ -65,10 +69,8 @@ Enterprise-Account-Research-Dashboard/
 │   ├── website_parser.py
 │   ├── news_service.py
 │   ├── intelligence.py
+│   ├── pdf_generator.py
 │   └── llm_service.py
-│
-├── assets/
-├── utils/
 ├── test.py
 └── pipeline_test.py
 ```
