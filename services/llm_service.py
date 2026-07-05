@@ -186,14 +186,29 @@ def generate_executive_brief(company_name, intelligence):
     except Exception:
 
         return {
-            "executive_summary": text,
-            "key_developments": [],
-            "opportunities": [],
-            "risks": [],
-            "talking_points": [],
-            "next_actions": []
-        }
+            "executive_summary":
+                "No recent enterprise developments were found for this company. "
+                "The dashboard successfully identified the company's official website, "
+                "but there were insufficient recent news articles to generate business intelligence.",
 
+            "key_developments": [
+                "No recent enterprise developments identified."
+            ],
+
+            "opportunities": [
+                "Monitor future announcements related to product launches, partnerships, hiring, or funding."
+            ],
+
+            "risks": [],
+
+            "talking_points": [
+                "Discuss the company's current products, services, and long-term business strategy."
+            ],
+
+            "next_actions": [
+                "Re-run the analysis at a later date when new enterprise news becomes available."
+            ]
+        }
 
 if __name__ == "__main__":
 
